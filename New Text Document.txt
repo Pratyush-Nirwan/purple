@@ -1,0 +1,10 @@
+let punishment = new Discord.MessageEmbed()
+        .setColor('#2F3136')
+        .setTitle('**💀Punishments**')
+        .setDescription('*Note: These punishments are for common rule infractions Mods can decide the punishment based on the serverity of the infraction.*')
+        .addFields(
+          { name: 'What can result in a warning?', value: "```•Abusing others.\n•Not keeping the chat appropiate.\n•Sending 𝙉𝙎𝙁𝙒 𝙞𝙢𝙖𝙜𝙚𝙨,𝙂𝙄𝙁𝙨 𝙤𝙧 𝙫𝙞𝙙𝙚𝙤𝙨\n•Provoking others to 𝙗𝙧𝙚𝙖𝙠 𝙧𝙪𝙡𝙚𝙨.\n•Hurting someone on purpose.```" },
+          { name: "What can result in a mute?", value: "```•Doing the same thing again after reciving 𝙩𝙝𝙧𝙚𝙚 𝙬𝙖𝙧𝙣𝙞𝙣𝙜𝙨.\n•Doing arguments in the server.\n•Menitoning of raiding or nuking 𝙖𝙣𝙮 discord server.```" },
+          { name: "What can result in a kick?", value: "```•Doing the same thing after reciving 𝙨𝙞𝙜𝙣𝙞𝙛𝙞𝙘𝙖𝙣𝙩 amount of mutes`.\n•Changing your nickname to an 𝙤𝙛𝙛𝙚𝙣𝙨𝙞𝙫𝙚 one or to one that makes it 𝙞𝙢𝙥𝙤𝙨𝙨𝙞𝙗𝙡𝙚 𝙩𝙤 𝙢𝙚𝙣𝙩𝙞𝙤𝙣 even after the mods have moderated it.\n•DM advertising.```" },
+          { name: "What can result in a ban?", value: "```•Doing the same thing after rejoining after reciving a kick\n•Death threats\n•Sending content that 𝙞𝙨 𝙣𝙤𝙩 yours.\n•Being under 13 years old\n•Trying to or stealing photos. ```" },
+        )
