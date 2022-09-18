@@ -15,6 +15,7 @@
     "didyoumean2": "^5.0.0",
     "discord-xp": "^1.1.16",
     "discord.js": "^13.6.0",
+    "dotenv": "^16.0.2",
     "express": "^4.17.1",
     "figlet": "^1.5.2",
     "fs": "0.0.2",

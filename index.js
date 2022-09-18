@@ -1,11 +1,5 @@
 const Levels = require("discord-xp");
-const express = require('express');
-const app = express();
-const port = 3000;
-
-app.get('/', (req, res) => res.send('Purple is online'));
-
-app.listen(port, () => console.log(`This app is listening at http://localhost:${port}`));
+require('dotenv').config();
 
 const Discord = require('discord.js');
 const {Intents} = require('discord.js');
@@ -21,7 +15,7 @@ const fs = require('fs');
 const guild = client.guilds.cache.get('807571263001591818');
 
 const mongoose = require('mongoose')
-const mongo_db = 'mongodb+srv://urprobokeh:pratyush1588283@bokehutils.82kha.mongodb.net/BokehUtilsDB?retryWrites=true&w=majority'
+const mongo_db = process.env.MONGO_DB
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
 client.buttons = new Discord.Collection();
@@ -70,4 +64,4 @@ mongoose.connect(mongo_db, {
   console.log(err);
 })
 
-client.login('ODA3NTY4NTk3MzcwNjY3MDI4.YB543Q.mHK2AOqCxcF8dwYVRXgHzPfqjUE')
+client.login(process.env.BOT_TOKEN)
