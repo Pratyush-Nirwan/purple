@@ -12,7 +12,7 @@ module.exports = async(Discord, client , member) => {
     }
     //Welcome Message:-
     const response = await superagent.get(`https://g.tenor.com/v1/random?q=welcome_to&key=${process.env.TENOR_KEY}&limit=8`);
-    const welcomeChannel = client.channels.cache.get('997046181882503191');
+    const welcomeChannel = client.channels.cache.get('776107860694007810');
     let welcomeEmbed = new Discord.MessageEmbed()
 	.setColor('#2F3136')
 	.setThumbnail(`${member.user.displayAvatarURL({
