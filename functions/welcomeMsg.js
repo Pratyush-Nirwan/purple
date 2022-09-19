@@ -18,9 +18,9 @@ module.exports = {
 	.setThumbnail(`${member.user.displayAvatarURL({
         format: 'jpg'
 })}`)
-    .setDescription(`${welcome[random].replaceAll('${name}', `**${name}**`)}\nRules:- <#776140199829831733>\nRoles:- <#776301149271752734>`)
+    .setDescription(`${welcome[random].replaceAll('${name}', `**${name}**`)}\n\nRules:- <#776140199829831733>\nRoles:- <#776301149271752734>`)
     .setImage(response._body.results[0].media[0].tinygif.url)
-    welcomeChannel.send({content: `<@${member.id}>`, embeds:[welcomeEmbed]})
+    welcomeChannel.send({content: `<@${member.id}> <@807300281476972564>`, embeds:[welcomeEmbed]})
     }  
 
     
