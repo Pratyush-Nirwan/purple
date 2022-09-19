@@ -2,7 +2,7 @@
 const Levels = require("discord-xp");
 const welcomeMsg = require('../../functions/welcomeMsg.js')
 const moment = require('moment');
-
+const superagent = require('superagent');
 
 module.exports = async(Discord, client , member) => {
 

@@ -35,6 +35,7 @@
     "reconlx": "^2.0.1",
     "request": "^2.88.2",
     "similarity": "^1.2.1",
+    "superagent": "^8.0.0",
     "txtgen": "^2.2.8",
     "ultrax": "^1.7.16",
     "weky": "^3.1.8",
