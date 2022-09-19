@@ -11,15 +11,15 @@ module.exports = async(Discord, client , member) => {
       welcomeMsg.execute(Discord, client , member)
     }
     //Welcome Message:-
-    const welcomeChannel = client.channels.cache.get('776107860694007810');
+    const response = await superagent.get(`https://g.tenor.com/v1/random?q=welcome_to&key=${process.env.TENOR_KEY}&limit=8`);
+    const welcomeChannel = client.channels.cache.get('997046181882503191');
     let welcomeEmbed = new Discord.MessageEmbed()
 	.setColor('#2F3136')
 	.setThumbnail(`${member.user.displayAvatarURL({
         format: 'jpg'
 })}`)
     .setDescription(`**Welcome to the server ${member.user.tag} !**\n**Enjoy your stay in the server!**\nRules:- <#776140199829831733>\nRoles:- <#776301149271752734>`)
-	.setFooter(`Member #${client.guilds.cache.get('776107860694007808').memberCount}`)
-    .setImage(`https://i.imgur.com/EvIquGU.gif`)
+    .setImage(response._body.results[0].media[0].tinygif.url)
     welcomeChannel.send({content: `<@${member.id}>`, embeds:[welcomeEmbed]})
 
     //Log the joining.
